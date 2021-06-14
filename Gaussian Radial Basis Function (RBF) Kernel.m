@@ -1,13 +1,18 @@
 clc;
 clear;
-path('C:\Users\Salar\Downloads\Compressed\libsvm-3.22\matlab',path)
 
+%Set path of the LIBSVM toolbox
+path('C:\libsvm-3.22\matlab',path)
+
+%Insert the data and divide it to train and test 
 filename='D:\Project\river\vaniar\vandata.xls';
 nn_inp_train=xlsread(filename,'Train','C:C')';
 nn_trg_train=xlsread(filename,'Train','E:E')';
 nn_inp_test=xlsread(filename,'Test','C:C')';
 nn_trg_test=xlsread(filename,'Test','E:E')';
 
+%Normalization or rescale the input data 
+%It is important to select carefully the range of new scale
 [inp_train,inS]=mapminmax(nn_inp_train,-1,1);
 [trg_train,outS]=mapminmax(nn_trg_train,-1,1);
 inp_test=mapminmax('apply',nn_inp_test,inS);
