@@ -1,6 +1,6 @@
 # Fruit Fly Optimization Algorithm (FOA)
 
-FOA is used to optimize Support Vector Regression (SVR).
+[FOA](https://doi.org/10.1016/j.knosys.2011.07.001) is used to optimize Support Vector Regression (SVR).
 For this reason, [LIBSVM](https://www.csie.ntu.edu.tw/~cjlin/libsvm/) toolbox is used in MATLAB and optimization is provided for three different kernel functions listed below:
 - [Polynomial Kernel](https://en.wikipedia.org/wiki/Polynomial_kernel)
 - [Gaussian Radial Basis Function (RBF) Kernel](https://en.wikipedia.org/wiki/Radial_basis_function_kernel)
