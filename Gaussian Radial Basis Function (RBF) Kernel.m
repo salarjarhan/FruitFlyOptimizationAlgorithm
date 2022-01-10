@@ -65,6 +65,7 @@ end
 
 %Optimum smell concentration
 [bestSmell,bestindex]=min(Smell);
+%Correction for swarm location
 X_axis=X(bestindex,:);
 Y_axis=Y(bestindex,:);
 bestS=S(bestindex,:);
