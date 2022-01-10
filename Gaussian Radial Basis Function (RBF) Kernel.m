@@ -120,11 +120,13 @@ for gen=1:maxgen
     Ybest(gen,:)=Y_axis;
 end
 
+%Plot optimization process
 figure(1)
 plot(yy)
 title('Optimization process','fontsize',12)
 xlabel('Iteration Number','fontsize',12);ylabel('MSE','fontsize',12);
 
+%Plot flying route
 figure(2)
 plot(Xbest(:,1),Ybest(:,1),'b.');
 title('Fruit fly flying route','fontsize',14)
